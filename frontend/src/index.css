@@ -1,0 +1,90 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+:root {
+  font-family: 'Inter', system-ui, sans-serif;
+
+  /* Colors */
+  --background: #ffffff;
+  --surface: #f5f6f8;
+  --foreground: #202a3c;
+  --muted: #4d4d4e;
+  --primary: #5b50f5;
+  --primary-hover: #766df3;
+  --border: #e8ebf0;
+  --success: #10b981;
+
+  /* Shape */
+  --radius: 6px;
+  --radius-lg: 10px;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: var(--font-sans);
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: inherit;
+  -webkit-font-smoothing: antialiased;
+  padding: 2rem 120px;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.primary-btn{
+  padding: 10px 20px;
+  background-color: var(--primary);
+  border: 0px;
+  color: var(--surface);
+  font-family: var(--font-sans);
+  border-radius: var(--radius);
+  margin: auto 10px;
+  transition-duration: 3sec;
+  font-weight: 400;
+}
+
+.primary-btn:hover{
+  background-color: var(--primary-hover);
+}
+
+
+.secondary-btn{
+  padding: 10px 20px;
+  border: 0px;
+  color: var(--muted);
+  font-family: var(--font-sans);
+  margin: auto 10px;
+  font-weight: 400;
+}
+
+.secondary-btn:hover{
+  color: #000;
+}
+
+.text-dull{
+  color: var(--muted);
+  font-family: var(--font-sans);
+  font-weight: 400;
+}
+
+.hero-screenshot{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
