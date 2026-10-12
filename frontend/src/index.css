@@ -9,7 +9,7 @@
   --background: #ffffff;
   --surface: #f5f6f8;
   --foreground: #202a3c;
-  --muted: #4d4d4e;
+  --muted: #6a6f79;
   --primary: #5b50f5;
   --primary-hover: #766df3;
   --border: #e8ebf0;
@@ -82,9 +82,39 @@ a {
 .text-dull{
   color: var(--muted);
   font-family: var(--font-sans);
+  font-size: 1rem;
   font-weight: 400;
+  line-height: 1.6;
 }
 
 .hero-screenshot{
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.section-heading {
+  margin: 7rem auto 4rem;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  text-align: center;
+}
+
+.section-heading h3 {
+  margin: 0;
+  color: var(--foreground);
+  font-size: 1.875rem;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+}
+
+.section-heading span {
+  max-width: 780px;
+  color: #7b8494;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.6;
 }
